@@ -1,0 +1,55 @@
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--我发起的-->
+<view  hidden="{{currentTab!==0}}">
+  <view class="content" bindtap="showdetail" wx:for="{{activityList}}">
+    <view class="top">
+      <view class="title flex">
+        <image class="icon" src="/images/icon/me-activity.png" />
+        <view class="theme">{{item.theme}}</view>
+        <view class="detail" style="color: {{item.color}}">● {{item.detail}}</view>
+      </view>
+      <view class="content-line flex">
+        <image class="icon" src="/images/icon/activity-time.png" />
+        <view class="time">时间：{{item.time}}</view>
+      </view>
+      <view class="content-line flex">
+        <image class="icon" src="/images/icon/activity-address.png" />
+        <view class="address">地点：{{item.address}}</view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="num">
+        共
+        <text style="color: #1DAB1A">50</text>
+        个名额,参加
+        <text style="color: #1DAB1A">10</text>
+        人,待定
+        <text style="color: #4A90E2">10</text>
+        人,缺席
+        <text style="color: #C3191B">10</text>
+        人
+      </view>
+      <view class="publish_time">
+        2020年10月10日12:31发布
+      </view>
+    </view>
+  </view> 
+</view>
+ 
+<!--我参与的-->
+<view hidden="{{currentTab!==1}}"> 
+  <view class="noDataPage">
+    <image class="icon" src="/images/icon/noDataPage.png" />
+    <view class="text">暂无活动记录</view>
+    <view class="btn">发起活动</view>
+  </view>
+</view>
+ 
+<!--浏览过的-->
+<view hidden="{{currentTab!==2}}">
+tab_03
+</view>

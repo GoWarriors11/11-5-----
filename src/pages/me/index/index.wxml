@@ -1,0 +1,45 @@
+<!-- src/pages/home/home.wxml -->
+<view class="container">
+  <view class='head '>
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+      <view class="userinfo flex">
+        <image class="userinfo-avatar" src="/images/icon/default-avatar.png"  />
+        <button class="login-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权登录 </button>
+      </view>    
+    </block>
+    <block wx:else>
+      <view class="userinfo">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="my-activity" bindtap="showdetail">
+    <view class="top flex">
+      <image class="icon" src="/images/icon/me-activity.png" />
+      <view class="text">我的活动</view>
+    </view>
+    <view class="item flex">
+      <view class="my">
+        <view class="num">3</view>
+        <view class="text">我发起的</view>
+      </view>
+      <view class="my">
+        <view class="num">5</view>
+        <view class="text">我参与的</view>
+      </view>
+      <view class="my">
+        <view class="num">4</view>
+        <view class="text">浏览过的</view>
+      </view>
+    </view>
+  </view>
+  <view class="menu-box">
+    <navigator class="menu-item flex flex-between flex-middle" hover-class="none" url="/pages/me/about/about">
+      <view class="flex flex-left flex-middle">
+        <image class="icon" src="/images/icon/me-about.png" mode="aspectFill"></image>
+        <view class="title">关于我们</view>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+.content {
+  position: relative;
+  margin-top: 20rpx;
+  padding: 0rpx 20rpx;
+  background-color: #FFFFFF; }
+  .content .theme {
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #e0e0e0; }
+    .content .theme .title {
+      margin-right: 30rpx;
+      font-size: 32rpx; }
+    .content .theme .text {
+      flex: 1; }
+  .content .choose_date {
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #e0e0e0; }
+    .content .choose_date .title {
+      margin-right: 30rpx;
+      font-size: 32rpx; }
+    .content .choose_date .text {
+      flex: 1; }
+      .content .choose_date .text .picker {
+        color: #999999; }
+  .content .choose_time {
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #e0e0e0; }
+    .content .choose_time .title {
+      margin-right: 30rpx;
+      font-size: 32rpx; }
+    .content .choose_time .text {
+      flex: 1; }
+      .content .choose_time .text .picker {
+        color: #999999; }
+  .content .choose_place {
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center; }
+    .content .choose_place .title {
+      margin-right: 30rpx;
+      font-size: 32rpx; }
+    .content .choose_place .text {
+      flex: 1; }
+      .content .choose_place .text .picker {
+        color: #999999; }
+
+.detail {
+  margin-top: 20rpx;
+  padding: 0rpx 20rpx;
+  background-color: #FFFFFF; }
+  .detail .number {
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #e0e0e0; }
+    .detail .number .title {
+      margin-right: 30rpx;
+      font-size: 32rpx; }
+    .detail .number .text {
+      flex: 1; }
+  .detail .description {
+    position: relative;
+    height: 400rpx;
+    margin: 30rpx 20rpx; }
+    .detail .description .text-box {
+      margin-top: 30rpx; }
+    .detail .description .wordwrap {
+      position: absolute;
+      bottom: 10rpx;
+      right: 0;
+      color: #999999; }
+
+.activity_remind {
+  position: relative;
+  padding: 30rpx 40rpx;
+  background-color: #FFFFFF; }
+  .activity_remind .text {
+    font-size: 32rpx;
+    padding-right: 15rpx; }
+  .activity_remind .icon {
+    width: 45rpx;
+    height: 45rpx; }
+  .activity_remind .switch {
+    position: absolute;
+    right: 40rpx; }
+
+.putactivity {
+  margin: 40rpx 30rpx; }

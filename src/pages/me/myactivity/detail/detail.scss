@@ -1,0 +1,111 @@
+
+page{
+  background-color: #FFFFFF;
+}
+.content{
+  position: relative;
+  padding: 0rpx 30rpx;
+  background-color: #FFFFFF;
+  border-top: 1rpx solid rgba(0, 0, 0, 0.1) ;
+  .homeNewest{
+    width: 100rpx;
+    height: 48rpx;
+    margin-left: -20rpx;}
+  .flag_begintime{
+    position: absolute;
+    top: 5rpx;
+    left: 8rpx;
+    font-size: 25rpx;
+    line-height: 48rpx;
+  }
+  .user{
+    margin-top: 30rpx;
+    .userImg{
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 50%;
+    }
+    .theme{
+      margin-left: 30rpx;
+      padding: 20rpx;
+      background-color: #f5f5f5;
+      .theme-one{
+        color: #999999;
+        font-size: 24rpx;
+      }
+      .theme-two{
+        margin-top: 20rpx;
+        color: #333333;
+        font-size: 32rpx;
+        font-weight: bold;
+      }
+    }
+  }
+  .content-line{
+    margin: 30rpx 0rpx;
+    font-size: 28rpx;
+    .title{
+      margin-left: 20rpx;
+    }
+    .detail{
+      color: #999999;
+      font-size: 24rpx;
+      margin: 20rpx 0rpx 0rpx 60rpx;
+    }
+  }
+  .lineation{
+    margin: 30rpx 0rpx;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .rest{
+    color: rgba(153, 153, 153, 1);
+  }
+  .btn{
+    margin: 20rpx 10rpx;
+    .is_join{
+      margin-right: 40rpx;
+    }
+    button{
+      height: 88rpx;
+      width: 320rpx;
+      font-size: 32rpx;
+      line-height: 88rpx;
+    }
+  }
+  .more{
+    padding: 30rpx 0;
+    position: relative;
+    .text{
+    color: rgba(153, 153, 153, 1);
+
+    }
+    .right{
+      position: absolute;
+      right: 0;
+      .text{
+        color: black;
+        padding-right: 20rpx;
+      }
+    }
+  }
+  .operation{
+    padding: 30rpx 0;
+    .op_button{ 
+      flex: 1;
+      height: 80rpx;
+      text-align: center;
+      border-radius: 10rpx;
+      line-height: 80rpx;
+      background-color: rgba(240, 240, 240, 1);
+      .op_button :hover{
+        background-color:rgb(209, 207, 207) ;
+      }
+    }
+    .button_2{
+      margin: 0 40rpx;
+    }
+    .button_3{
+      color: red;
+    }
+  }
+}

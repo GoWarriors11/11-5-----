@@ -1,0 +1,136 @@
+.content {
+  position: relative;
+  margin-top: 20rpx;
+  padding: 0rpx 20rpx;
+  background-color: #FFFFFF; }
+  .content .homeNewest {
+    width: 100rpx;
+    height: 48rpx;
+    margin-left: -20rpx; }
+  .content .flag_begintime {
+    position: absolute;
+    top: 5rpx;
+    left: 8rpx;
+    font-size: 25rpx;
+    line-height: 48rpx; }
+  .content .user {
+    margin-top: 30rpx; }
+    .content .user .userImg {
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 50%; }
+    .content .user .theme {
+      margin-left: 30rpx;
+      padding: 20rpx;
+      background-color: #f5f5f5; }
+      .content .user .theme .theme-one {
+        color: #999999;
+        font-size: 24rpx; }
+      .content .user .theme .theme-two {
+        margin-top: 20rpx;
+        color: #333333;
+        font-size: 32rpx;
+        font-weight: bold; }
+  .content .content-line {
+    margin: 30rpx 0rpx;
+    font-size: 28rpx; }
+    .content .content-line .title {
+      margin-left: 20rpx; }
+    .content .content-line .detail {
+      color: #999999;
+      font-size: 24rpx;
+      margin: 20rpx 0rpx 0rpx 60rpx; }
+  .content .lineation {
+    margin: 30rpx 0rpx;
+    border-bottom: 1px solid #E0E0E0; }
+  .content .join_people {
+    display: flex;
+    margin: 40rpx 0rpx;
+    flex-wrap: wrap; }
+    .content .join_people .join_user {
+      width: 33.3%;
+      margin-bottom: 30rpx;
+      justify-content: center; }
+    .content .join_people .left {
+      margin-right: 10rpx;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .content .join_people .left .userImg {
+        width: 70rpx;
+        height: 70rpx;
+        border-radius: 50%; }
+      .content .join_people .left .is_join {
+        position: absolute;
+        top: 50rpx;
+        width: 60rpx;
+        height: 25rpx;
+        font-size: 20rpx;
+        background-color: #35bd33;
+        border-radius: 10rpx;
+        text-align: center; }
+    .content .join_people .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 28rpx; }
+      .content .join_people .right .name {
+        font-size: 20rpx; }
+      .content .join_people .right .date {
+        font-size: 17rpx;
+        color: #999999; }
+  .content .btn {
+    margin: 20rpx 10rpx; }
+    .content .btn .is_join {
+      margin-right: 40rpx; }
+    .content .btn button {
+      height: 88rpx;
+      width: 320rpx;
+      font-size: 32rpx;
+      line-height: 88rpx; }
+  .content .modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff; }
+  .content .modal-dialog {
+    width: 600rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 9999;
+    background: white;
+    margin: -280rpx 75rpx;
+    border-radius: 30rpx; }
+  .content .modal-content .title {
+    font-size: 34rpx;
+    font-weight: bold;
+    padding: 50rpx;
+    border-bottom: 0.5rpx solid #E0E0E0;
+    text-align: center;
+    color: black; }
+  .content .modal-content .option {
+    padding: 35rpx 0rpx;
+    border-bottom: 0.5rpx solid whitesmoke;
+    text-align: center;
+    color: black; }
+    .content .modal-content .option .explain {
+      font-size: 24rpx;
+      color: #999999; }
+  .content .modal-footer {
+    height: 100rpx;
+    font-size: 32rpx;
+    line-height: 95rpx; }
+    .content .modal-footer .btn-cancel {
+      width: 100%;
+      height: 100rpx;
+      color: #1cad1a;
+      text-align: center; }

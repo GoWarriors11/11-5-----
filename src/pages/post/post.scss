@@ -1,0 +1,132 @@
+
+.content{
+  position: relative;
+  margin-top: 20rpx;
+  padding: 0rpx 20rpx;
+  background-color: #FFFFFF;
+  
+  
+  .theme{
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom:1rpx solid rgba(224, 224, 224, 1);
+    
+    .title{
+      margin-right: 30rpx;
+      font-size: 32rpx;
+    }
+    .text{
+      flex: 1;
+    }
+  }
+  .choose_date{
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom:1rpx solid rgba(224, 224, 224, 1);
+    
+    .title{
+      margin-right: 30rpx;
+      font-size: 32rpx;
+    }
+    .text{
+      flex: 1;
+      .picker{
+        color:rgba(153, 153, 153, 1)
+      }
+    }
+  }
+  .choose_time{
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom:1rpx solid rgba(224, 224, 224, 1);
+    
+    .title{
+      margin-right: 30rpx;
+      font-size: 32rpx;
+    }
+    .text{
+      flex: 1;
+      .picker{
+        color:rgba(153, 153, 153, 1)
+      }
+    }
+  }
+  .choose_place{
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    
+    .title{
+      margin-right: 30rpx;
+      font-size: 32rpx;
+    }
+    .text{
+      flex: 1;
+      .picker{
+        color:rgba(153, 153, 153, 1)
+      }
+    }
+  }
+}
+.detail{
+  margin-top: 20rpx;
+  padding: 0rpx 20rpx;
+  background-color: #FFFFFF;
+  .number{
+    height: 90rpx;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    border-bottom:1rpx solid rgba(224, 224, 224, 1);
+    .title{
+      margin-right: 30rpx;
+      font-size: 32rpx;
+    }
+    .text{
+      flex: 1;
+    }
+  }
+  .description{
+    position: relative;
+    height: 400rpx;
+    margin: 30rpx 20rpx ;
+    .text-box{
+      margin-top: 30rpx;
+    }
+    .wordwrap{
+      position: absolute;
+      bottom: 10rpx;
+      right: 0;
+      color:rgba(153, 153, 153, 1);
+    }
+  }
+}
+.activity_remind{
+  position: relative;
+  padding: 30rpx 40rpx;
+  background-color: #FFFFFF;
+  .text{
+    font-size: 32rpx;
+    padding-right: 15rpx;
+  }
+  .icon{
+    width: 45rpx;
+    height: 45rpx;
+  }
+  .switch{
+    position: absolute;
+    right: 40rpx;
+  }
+
+}
+.putactivity{
+  margin: 40rpx 30rpx;
+
+}

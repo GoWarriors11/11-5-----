@@ -1,0 +1,15 @@
+/* components/list-null/list-null.wxss */
+.list-null{
+  text-align: center;
+  margin-top: 20vw;
+}
+image{
+  width: 40vw;
+  height: 40vw;
+}
+.null{
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+  margin-top: 20rpx;
+}

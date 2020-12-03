@@ -1,0 +1,77 @@
+<!--pages/index/detail/detail.wxml-->
+<view class="container">
+  <view class="user flex">
+    <image class="userImg" src="/images/icon/default-avatar.png" mode="aspectFill"></image>
+    <view class="theme">
+      <view class="theme-one flex flex-between flex-middle">
+        <view class="name">
+          <text style="margin: 0rpx 150rpx 0rpx 0rpx">@张三 发起</text>
+        </view>
+        <view class="time">2020年10月10日12:31</view>
+      </view>
+      <view class="theme-two">周末去烧烤</view>
+    </view>
+  </view>
+  <view class="content-line flex flex-between flex-middle" >
+    <view class="flex flex-middle">
+      <image class="icon" src="/images/icon/activity-people.png" mode="aspectFill"></image>
+      <view class="title">
+        共
+        <text style="color: #1DAB1A">50</text>
+        个名额,参加
+        <text style="color: #1DAB1A">10</text>
+        人,待定
+        <text style="color: #4A90E2">10</text>
+        人,缺席
+        <text style="color: #C3191B">10</text>
+        人
+      </view>
+    </view>
+  </view>
+  <view class="showmore flex" wx:for="{{dataList}}">
+    <view class="left">
+      <view class="join"style="background-color:{{item.backgroundcolor}}">{{item.title}}</view>
+    </view>
+    <view class="list flex">
+      <view class="list_1 flex" wx:for="{{7}}">
+        <image class="userImg flex" src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2057588226,2402156864&fm=11&gp=0.jpg'></image>
+        <view class="right">
+          <view class="name " >张三</view>
+          <view class="date ">10月15日 14:12</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom" style="position:fixed;bottom:0;">
+    <view class="remain_num">剩余40个名额</view>
+    <view class="btn flex">
+      <view class="is_join" bindtap="showchoise">
+        <button type="primary" >是否报名</button>
+      </view>
+      <view class="share">
+        <button  catchtap='showDialogBtn'>分享活动</button>
+      </view>
+      <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+      <view class="modal-dialog" wx:if="{{showModal}}"> 
+        <view class="modal-content">
+          <view class="title" style="font-weight: bold;">选择水印并分享</view>
+          <view class="option">报名接龙啦</view>
+          <view class="option">有人报名吗</view>
+          <view class="option">
+            <text >本人待定</text>
+            <view class="explain">不影响报名状态</view>
+          </view>
+          <view class="option">
+            <text >本人缺席</text>
+            <view class="explain">不影响报名状态</view>
+          </view>
+        </view>
+        <view class="modal-footer">
+          <view class="btn-cancel" bindtap="hideModal" data-status="cancel">
+            取消
+          </view>
+        </view>
+      </view> 
+    </view>
+  </view>
+</view>

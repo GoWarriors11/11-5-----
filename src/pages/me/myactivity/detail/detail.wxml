@@ -1,0 +1,79 @@
+<!--pages/me/myactivity/myjoin/myjoin.wxml-->
+<!-- src/pages/home/home.wxml -->
+<view class="container">
+  <view class="content">
+    <view class="user flex">
+      <image class="userImg" src="{{userInfo.headImg ? userInfo.headImg : '/images/icon/default-avatar.png'}}" mode="aspectFill"></image>
+      <view class="theme">
+        <view class="theme-one flex flex-between flex-middle">
+          <view class="name">
+            @{{userInfo.name}}
+            <text style="margin: 0rpx 80rpx 0rpx 10rpx">发起</text>
+          </view>
+          <view class="time">{{list.time}}</view>
+        </view>
+        <view class="theme-two">{{list.particulars}}</view>
+      </view>
+    </view>
+    <view class="content-line flex flex-">
+      <image class="icon" src="/images/icon/activity-time.png" mode="aspectFill"></image>
+      <view class="title">时间:{{list.date}}{{list.week}}{{list.beginTime}}-{{list.endTime}}</view>
+    </view>
+    <view class="content-line flex flex-between flex-middle">
+      <view class="flex flex-middle">
+        <image class="icon" src="/images/icon/activity-address.png" mode="aspectFill"></image>
+        <view class="title">地点:{{list.address}}</view>
+      </view>
+      <image class="icon" src="/images/icon/icon-more.png" mode="aspectFill"></image>
+    </view>
+    <view class="detail" style="color: #999999; font-size: 24rpx; margin-left: 60rpx">
+      {{list.detailed}}
+    </view>
+    <view class="content-line">
+      <view class="flex">
+        <image class="icon" src="/images/icon/activity-explain.png" mode="aspectFill"></image>
+        <view class="title">活动说明:</view>
+      </view>
+      <view class="detail">{{list.explain}}</view>
+    </view>
+    <view class="lineation"></view>
+    <view class="content-line flex flex-between flex-middle">
+      <view class="flex flex-middle">
+        <image class="icon" src="/images/icon/activity-people.png" mode="aspectFill"></image>
+        <view class="title">
+          共
+          <text style="color: #1DAB1A">{{list.aggregate}}</text>
+          个名额,参加
+          <text style="color: #1DAB1A">{{list.join}}</text>
+          人,待定
+          <text style="color: #4A90E2">{{list.undetermined}}</text>
+          人,缺席
+          <text style="color: #C3191B">{{list.absent}}</text>
+          人
+        </view>
+      </view>
+      <image class="icon" src="/images/icon/icon-more.png" mode="aspectFill"></image>
+    </view>
+    <view class="rest">剩余{{list.aggregate-list.join}}个名额</view>
+    <view class="btn flex">
+      <view class="is_join" bindtap="showchoise">
+        <button type="primary" >是否报名</button>
+      </view>
+      <view class="share">
+        <button >分享活动</button>
+      </view>
+    </view>
+    <view class="more flex">
+      <view class="text">更多操作（发起人权限）</view>
+      <view class="right flex">
+        <view class="text">通知已报名人员</view>
+        <switch  />
+      </view>
+    </view>
+    <view class="operation flex">
+      <view class="op_button,button_1">编辑活动</view>
+      <view class="op_button,button_2" bindtap="showcancel">取消活动</view>
+      <view class="op_button,button_3" bindtap="showdelete">删除活动</view>
+    </view>
+  </view>
+</view>

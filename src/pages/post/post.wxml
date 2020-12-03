@@ -1,0 +1,69 @@
+<!--src/pages/post/post.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="theme">
+      <view class="title">主题</view>
+      <view class="text">
+        <input placeholder="请输入少于16个字的活动主题" maxlength="16" placeholder-style="color:rgba(153, 153, 153, 1)"/>
+      </view>
+    </view>
+    <view class="choose_date">
+      <view class="title">日期</view>
+      <view class="text">
+        <picker mode="date" value="{{date}}" start="2019-11-11" end="2025-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="choose_time">
+      <view class="title">时间</view>
+      <view class="text">
+        <picker mode="time" value="{{time}}" start="9:00" end="21:00" bindchange="bindTimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="choose_place">
+      <view class="title">地点</view>
+      <view class="text">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            {{region[0]}}，{{region[1]}}，{{region[2]}}
+          </view>
+        </picker>
+      </view>
+    </view>   
+  </view>
+  <view class="detail">
+    <view class="number">
+      <view class="title">报名人数</view>
+      <view class="text">
+        <input placeholder="最少3人，最多50人" type="number" placeholder-style="color:rgba(153, 153, 153, 1)"/>
+      </view>
+    </view>
+    <view class="description">
+      <view class="title">活动说明</view>
+      <view class="text-box">
+        <textarea name="review" maxlength="{{maxNumber}}" class="textArea" value="{{reviewText}}" bindinput='inputText' placeholder="请输入少于200字"></textarea>
+        <span class="wordwrap">剩余{{maxNumber-number}}字</span>
+      </view>
+    </view>
+  </view>
+  <view class="activity_remind flex" >
+    <view class="text" >活动提醒</view>
+    <view  bindtap="showtip">
+      <image class="icon" src="/images/icon/activity_remind.png" mode="aspectFill"></image>
+    </view>
+    <view class="switch">
+      <switch  />
+    </view>
+  </view>
+  <view class="putactivity">
+    <button type="primary">发起活动</button>
+  </view>
+</view>
+

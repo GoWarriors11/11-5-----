@@ -1,0 +1,102 @@
+<!-- src/pages/index/index.wxml -->
+<view class="container">
+  <view class="content">
+    <image class="homeNewest" src="/images/icon/home-newest.png" mode="aspectFill"></image>
+    <view class="flag_begintime" >2天后</view>
+    <view class="user flex">
+      <image class="userImg" src="{{userInfo.headImg ? userInfo.headImg : '/images/icon/default-avatar.png'}}" mode="aspectFill"></image>
+      <view class="theme">
+        <view class="theme-one flex flex-between flex-middle">
+          <view class="name">
+            @{{userInfo.name}}
+            <text style="margin: 0rpx 80rpx 0rpx 10rpx">发起</text>
+          </view>
+          <view class="time">{{list.time}}</view>
+        </view>
+        <view class="theme-two">{{list.particulars}}</view>
+      </view>
+    </view>
+    <view class="content-line flex flex-">
+      <image class="icon" src="/images/icon/activity-time.png" mode="aspectFill"></image>
+      <view class="title">时间:{{list.date}}{{list.week}}{{list.beginTime}}-{{list.endTime}}</view>
+    </view>
+    <view class="content-line flex flex-between flex-middle">
+      <view class="flex flex-middle">
+        <image class="icon" src="/images/icon/activity-address.png" mode="aspectFill"></image>
+        <view class="title">地点:{{list.address}}</view>
+      </view>
+      <image class="icon" src="/images/icon/icon-more.png" mode="aspectFill"></image>
+    </view>
+    <view class="detail" style="color: #999999; font-size: 24rpx; margin-left: 60rpx">
+      {{list.detailed}}
+    </view>
+    <view class="content-line">
+      <view class="flex">
+        <image class="icon" src="/images/icon/activity-explain.png" mode="aspectFill"></image>
+        <view class="title">活动说明:</view>
+      </view>
+      <view class="detail">{{list.explain}}</view>
+    </view>
+    <view class="lineation"></view>
+    <view class="content-line flex flex-between flex-middle" bindtap="showdetail">
+      <view class="flex flex-middle">
+        <image class="icon" src="/images/icon/activity-people.png" mode="aspectFill"></image>
+        <view class="title">
+          共
+          <text style="color: #1DAB1A">{{list.aggregate}}</text>
+          个名额,参加
+          <text style="color: #1DAB1A">{{list.join}}</text>
+          人,待定
+          <text style="color: #4A90E2">{{list.undetermined}}</text>
+          人,缺席
+          <text style="color: #C3191B">{{list.absent}}</text>
+          人
+        </view>
+      </view>
+      <image class="icon" src="/images/icon/icon-more.png" mode="aspectFill"></image>
+    </view>
+    <view class="join_people ">
+      <view class="join_user flex" wx:for="{{15}}">
+        <view class="left">
+          <image class="userImg flex" src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2057588226,2402156864&fm=11&gp=0.jpg'></image>
+          <view class="is_join" >
+            <text >参加</text>
+          </view>
+        </view>
+        <view class="right">
+          <view class="name " >张三</view>
+          <view class="date ">10月15日 14:12</view>
+        </view>
+      </view>
+    </view>
+    <view class="btn flex">
+      <view class="is_join" bindtap="showchoise">
+        <button type="primary" >是否报名</button>
+      </view>
+      <view class="share">
+        <button  catchtap='showDialogBtn'>分享活动</button>
+      </view>
+      <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+      <view class="modal-dialog" wx:if="{{showModal}}"> 
+        <view class="modal-content">
+          <view class="title" style="font-weight: bold;">选择水印并分享</view>
+          <view class="option">报名接龙啦</view>
+          <view class="option">有人报名吗</view>
+          <view class="option">
+            <text >本人待定</text>
+            <view class="explain">不影响报名状态</view>
+          </view>
+          <view class="option">
+            <text >本人缺席</text>
+            <view class="explain">不影响报名状态</view>
+          </view>
+        </view>
+        <view class="modal-footer">
+          <view class="btn-cancel" bindtap="hideModal" data-status="cancel">
+            取消
+          </view>
+        </view>
+      </view> 
+    </view>
+  </view>
+</view>

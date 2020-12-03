@@ -1,0 +1,85 @@
+page {
+  background-color: #FFFFFF; }
+
+.content {
+  position: relative;
+  padding: 0rpx 30rpx;
+  background-color: #FFFFFF;
+  border-top: 1rpx solid rgba(0, 0, 0, 0.1); }
+  .content .homeNewest {
+    width: 100rpx;
+    height: 48rpx;
+    margin-left: -20rpx; }
+  .content .flag_begintime {
+    position: absolute;
+    top: 5rpx;
+    left: 8rpx;
+    font-size: 25rpx;
+    line-height: 48rpx; }
+  .content .user {
+    margin-top: 30rpx; }
+    .content .user .userImg {
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 50%; }
+    .content .user .theme {
+      margin-left: 30rpx;
+      padding: 20rpx;
+      background-color: #f5f5f5; }
+      .content .user .theme .theme-one {
+        color: #999999;
+        font-size: 24rpx; }
+      .content .user .theme .theme-two {
+        margin-top: 20rpx;
+        color: #333333;
+        font-size: 32rpx;
+        font-weight: bold; }
+  .content .content-line {
+    margin: 30rpx 0rpx;
+    font-size: 28rpx; }
+    .content .content-line .title {
+      margin-left: 20rpx; }
+    .content .content-line .detail {
+      color: #999999;
+      font-size: 24rpx;
+      margin: 20rpx 0rpx 0rpx 60rpx; }
+  .content .lineation {
+    margin: 30rpx 0rpx;
+    border-bottom: 1px solid #E0E0E0; }
+  .content .rest {
+    color: #999999; }
+  .content .btn {
+    margin: 20rpx 10rpx; }
+    .content .btn .is_join {
+      margin-right: 40rpx; }
+    .content .btn button {
+      height: 88rpx;
+      width: 320rpx;
+      font-size: 32rpx;
+      line-height: 88rpx; }
+  .content .more {
+    padding: 30rpx 0;
+    position: relative; }
+    .content .more .text {
+      color: #999999; }
+    .content .more .right {
+      position: absolute;
+      right: 0; }
+      .content .more .right .text {
+        color: black;
+        padding-right: 20rpx; }
+  .content .operation {
+    padding: 30rpx 0; }
+    .content .operation .op_button {
+      flex: 1;
+      height: 80rpx;
+      text-align: center;
+      border-radius: 10rpx;
+      line-height: 80rpx;
+      background-color: #f0f0f0; }
+      .content .operation .op_button .op_button :hover {
+        background-color: #d1cfcf; }
+    .content .operation .button_2 {
+      margin: 0 40rpx; }
+    .content .operation .button_3 {
+      color: red; }

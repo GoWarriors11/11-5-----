@@ -1,0 +1,26 @@
+<!--src/pages/me/D_signup/signup.wxml-->
+<view class="container">
+  <view class="header">
+    填写报名信息
+  </view>
+  <view class="infomation">
+    <view class="signup_num flex">
+      <view class="text">报名人数</view>
+      <view class="num flex">
+        <image class="icon minus" bindtap="minusCount" src="/images/icon/apply-minus.png" />
+        <view class="center">{{counter}}</view>
+        <image class="icon add" bindtap="addCount" src="/images/icon/apply-add.png" />
+      </view>
+    </view>
+    <view class="name_1 flex">
+      <view class="text">姓名</view>
+      <input placeholder="朱小伟" placeholder-style="color:rgba(153, 153, 153, 1)" />
+      <image class="icon add" src="/images/icon/apply-delete.png" />
+    </view>
+    <view class="name_2 flex">
+      <view class="text">姓名</view>
+      <input placeholder="张三" placeholder-style="color:rgba(153, 153, 153, 1)" />
+      <image class="icon add" src="/images/icon/apply-delete.png" />
+    </view>
+  </view>
+</view>
