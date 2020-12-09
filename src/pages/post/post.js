@@ -45,4 +45,7 @@ Page({
       region: e.detail.value,
     });
   },
+  switch1Change: function(e) {
+    console.log(`Switch样式点击后是否选中：`, e.detail.value);
+  },
 });

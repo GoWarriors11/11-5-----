@@ -7,6 +7,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse("button.open-type.getUserInfo"),
+    dataList: [{ item: "我发起的", Num: 3 }, { item: "我参与的", Num: 6 }, { item: "浏览过的", Num: 15 }],
   },
 
   /**
@@ -71,11 +72,11 @@ Page({
   },
 
   // 点击触发事件，跳转页面
-  showdetail: function() {
-    wx.navigateTo({
-      url: "../myactivity/index/index",
-    });
-  },
+  // showdetail: function() {
+  //   wx.navigateTo({
+  //     url: "../myactivity/index/index",
+  //   });
+  // },
 
   /**
    * 生命周期函数--监听页面加载

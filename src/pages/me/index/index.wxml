@@ -14,24 +14,17 @@
       </view>
     </block>
   </view>
-  <view class="my-activity" bindtap="showdetail">
+  <view class="my-activity"> 
+  <!-- bindtap="showdetail" -->
     <view class="top flex">
       <image class="icon" src="/images/icon/me-activity.png" />
       <view class="text">我的活动</view>
     </view>
-    <view class="item flex">
-      <view class="my">
-        <view class="num">3</view>
-        <view class="text">我发起的</view>
-      </view>
-      <view class="my">
-        <view class="num">5</view>
-        <view class="text">我参与的</view>
-      </view>
-      <view class="my">
-        <view class="num">4</view>
-        <view class="text">浏览过的</view>
-      </view>
+    <view class="item flex" >
+      <navigator class="my" wx:for="{{dataList}}" url="../myactivity/index/index? type={{item.index}}">
+        <view class="num">{{item.Num}}</view>
+        <view class="text">{{item.item}}</view>
+      </navigator>
     </view>
   </view>
   <view class="menu-box">

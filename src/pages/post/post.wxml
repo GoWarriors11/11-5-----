@@ -59,9 +59,11 @@
       <image class="icon" src="/images/icon/activity_remind.png" mode="aspectFill"></image>
     </view>
     <view class="switch">
-      <switch  />
+      <switch class='switch-view' checked="{{switch1Checked}}" bindchange="switch1Change" type='switch'/>
     </view>
   </view>
+  <view hidden="{{checked !== true}}"> nihaoma</view>
+  <view ></view>
   <view class="putactivity">
     <button type="primary">发起活动</button>
   </view>
